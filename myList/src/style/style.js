@@ -44,10 +44,11 @@ export const DivInserirItem = styled.div`
 `
 
 export const MainMyList = styled.div`
-    width:300px;
-    min-height:300px;
+    width:500px;
+    min-height:500px;
     max-height:800px;
-    border:1px solid black;
+    border:2px solid black;
+    border-radius:10px;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -55,14 +56,15 @@ export const MainMyList = styled.div`
 `
 
 export const InputMyLIst = styled.input`
-    width:280px;
-    height:40px;
+    width:400px;
+    height:50px;
     margin:3px 0;
     border-radius:5px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border:none;
     text-align:center;
-    
+    color:orangered;
+  
 
     &::placeholder{
         text-align:center;
@@ -70,5 +72,13 @@ export const InputMyLIst = styled.input`
     }
 `
 
+
+
+export const DivItem = styled.div`
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    
+`
 
 

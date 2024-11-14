@@ -64,12 +64,26 @@ export const InputMyLIst = styled.input`
     border:none;
     text-align:center;
     color:orangered;
-  
 
     &::placeholder{
         text-align:center;
         font-size:1rem;
     }
+` 
+
+export const StyledInputMyList = styled.input`
+background-color: ${(props) => (props.checked ? '#008000' : 'transparent')};
+color: ${(props) => (props.checked ? 'white' : 'black')};
+transition: background-color 0.3s;
+border: 1px solid #ccc;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+padding: 5px 10px;
+font-size:1rem;
+border-radius: 5px;
+text-align:center;
+width:450px;
+height:50px;
+margin:3px 0; 
 `
 
 
@@ -78,7 +92,7 @@ export const DivItem = styled.div`
     display:flex;
     align-items:center;
     justify-content:space-between;
-    
+    position:relative;
 `
 
 

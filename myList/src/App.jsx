@@ -2,16 +2,20 @@ import { GlobalStyle } from "./defaultGlobalStyle/globalStyle"
 import { useState } from "react"
 import { v4 as uuid } from 'uuid'
 import Check from "./components/iconCheck/iconCheck"
+
 import {
-  Header,
   BodyMyList,
   MainMyList,
   DivInserirItem,
-  InputMyLIst,
   DivItem,
   StyledInputMyList
 } from "./style/style"
+
 import Delete from "./components/iconDelete/iconDelete"
+import { Btn } from "./components/Btn/button"
+import { InputMyLIst } from "./components/input/styled"
+import { Header } from "./components/header/header"
+import { Footer } from "./components/footer/footer"
 
 function App() {
   const [valor, setValor] = useState('')
@@ -42,27 +46,25 @@ function App() {
 
   return (
     <>
-      <Header><h3>MyList</h3></Header>
+      <Header/>
       <BodyMyList>
-
-        <DivInserirItem>
-          <InputMyLIst type="text" placeholder="Inseir Item" maxLength={200} onChange={valorInput}/>
-          <button onClick={AdicionarInput}>Adicionar</button>
-        </DivInserirItem>
-
-        <MainMyList>
-          {itens.map((item) => {
-              return (
-                <DivItem key={item.id} >
-                    <Check checked={item.checked} onClick={() => AlternarCheck(item.id)} />
-                    <StyledInputMyList value={item.value} readOnly checked={item.checked} />
-                    <Delete checked={item.checked} onClick={() => DeletarItem(item.id)}/>
-                </DivItem>
-              )
-            })}
-        </MainMyList>
-
+          <DivInserirItem>
+              <InputMyLIst type='text' placeholder='Inserir Item' maxLength={50} onChange={valorInput}/>
+              <Btn nome='Adicionar' onClick={AdicionarInput}/>
+          </DivInserirItem>
+          <MainMyList>
+              {itens.map((item) => {
+                  return (
+                    <DivItem key={item.id} >
+                        <Check checked={item.checked} onClick={() => AlternarCheck(item.id)} />
+                        <StyledInputMyList value={item.value} readOnly checked={item.checked} />
+                        <Delete checked={item.checked} onClick={() => DeletarItem(item.id)}/>
+                    </DivItem>
+                  )
+                })}
+          </MainMyList>
       </BodyMyList>
+      <Footer/>
       <GlobalStyle />
     </>
   )

@@ -13,5 +13,10 @@ export const DivHeader = styled.div`
         color:white;
         font-size:1.5rem;
     }
-
+    @media (max-width: 430px){
+       max-width:380px;
+    }
+     @media (max-width: 600px){
+       width:600px;
+    }
 `

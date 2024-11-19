@@ -23,4 +23,37 @@ export const DivFooter = styled.div`
         text-decoration:none;
         font-weight:800;
     }
-`
+
+    @media (max-width: 430px){
+        
+        h3{
+            text-align:center;
+        }
+        a{
+            text-align:center;
+        }
+    }
+    @media (max-width: 600px){
+        h3{
+            font-size:0.7rem;
+        }
+
+        a{
+            font-size:0.7rem;
+        }
+    }
+
+     @media (min-width: 768px){
+    
+    }
+
+    @media (min-width: 1024px){
+    
+    }
+
+    @media (min-width: 1025px){
+    
+    }
+` 
+
+

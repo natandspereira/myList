@@ -27,7 +27,21 @@ export const MainMyList = styled.div`
     display:flex;
     align-items:center;
     justify-content:center;
-    flex-direction:column;
+    flex-direction:column; 
+
+     @media (max-width: 430px){
+        max-width:350px;
+        margin-right:10%;
+    }
+
+     @media (max-width: 540px){
+        margin-top:70px;
+        margin-left:50px;
+    }
+
+    @media (max-width: 600px){
+        width:500px;
+    }
 `
 
 
@@ -45,6 +59,13 @@ text-align:center;
 width:650px;
 height:50px;
 margin:3px 0; 
+
+
+
+@media (max-width: 600px){
+       width:480px;
+    }
+
 `
 
 

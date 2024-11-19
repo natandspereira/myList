@@ -10,6 +10,14 @@ export const StyleButton = styled.button`
     background:orange;
     color:white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+     @media (max-width: 430px){
+        margin-right:10%;
+    }
+    
+    @media (max-width: 540px){
+        margin-left:50px;
+    }
 `
 
 

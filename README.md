@@ -12,4 +12,4 @@ O principal objetivo é proporcionar uma forma simples e eficiente de gerenciar 
 <br>  
 ##Linguagens usadas:
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-
+https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white
